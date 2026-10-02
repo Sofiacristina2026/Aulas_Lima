@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(199, 245, 230);
+}
+h1{
+    background-color: #80f3e0;
+    color: rgb(32, 114, 109);
+}
+p{
+    background-color: rgb(243, 231, 217);
+    front-size: 14px;
+    color: rgb(76, 214, 189);
+    text-align: center;
+}
+
+/*Aqui é apneas um comentário 
+body{
+background-color: bisquee;
+}
+*/
