@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+
+    <style>
+
+        /* Menu superior */
+        .navbar-gamer {
+            display: flex;
+            background-color: rgb(196, 247, 166);
+            align-items: center;
+            padding: 24px;
+            height: 50px;
+            justify-content: space-between;
+        }
+
+        /* Links do menu */
+        .menu-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        a {
+            color: rgb(75, 131, 61);
+            text-decoration: none;
+        }
+
+        .logo {
+            color: rgb(87, 177, 46);
+        }
+
+        /* Quadradão grande */
+        .painel-principal {
+            background-color: #aa1414;
+            width: 90%;
+            height: 650px;
+            margin: 35px auto;
+          
+
+            /* Centraliza o quadrado menor */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Quadrado menor dentro do grande */
+        .painel-menor {
+            background-color: rgb(139, 12, 12);
+            width: 350px;
+            height: 350px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu superior -->
+    <header class="navbar-gamer">
+
+        <div class="logo">DEV.GAMES</div>
+
+        <nav class="menu-links">
+            <a href="">Inicio</a>
+            <a href="">Catálogo</a>
+            <a href="">Perfil</a>
+        </nav>
+
+    </header>
+
+    <!-- Quadradão principal -->
+    <main class="painel-principal">
+
+        <!-- Quadrado menor dentro do principal -->
+        <div class="painel-menor"></div>
+
+    </main>
+
+</body>
+</html>

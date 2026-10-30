@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        
+        *{
+        /*Para centralizar */
+            box-sizing: border-box;
+        }
+
+       .cupom-gamer{
+        /* delimitar a largura maxíma */
+        widht: 200px;
+        background-color: rgb(234, 252, 230);
+        /*20 px para cima e 30px para direita/esquerda */
+        padding: 20px  30px;
+        /* Bordas e tamnhos *dashed=tracinho. A estremidade da Box Model*/
+        border: 2px solid #85fd95; 
+        /*Aumentar as margens entre o quadrados e a margem  */
+        margin: 25px auto;
+       } 
+       .btn-gamer{
+        /*Permite que o link aceite padding e largura com segurança */
+        display:inline-block;
+        background-color: rgb(209, 247, 222);
+        color: rgb(46, 199, 110);
+        /*Retira o sublinhado do link */
+        text-decoration: nome;
+        /*14px em cima/baixo e 28px nas laterais */
+        padding: 14px 28px;
+        /* Serve para arredondar os cantos */
+        border-radius: 10px;
+        font-weight: 700;
+        transition: all 0.2s ease;
+       }
+
+       .btn-gamer:hover{
+        background-color: rgb(182, 248, 209);
+        transform: translateY(3px);
+       }
+
+       .btn-gamer:active{
+        transform: translateY(2px);
+       }
+
+       .btn-secundario {
+        background-color: transparent;
+        color: rgb(34, 141, 69);
+        border: 2px dotted rgb(67, 238, 133);
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-left: 10px;
+}
+       
+    </style>
+</head>
+<body>
+    <a href="" class="btn-gamer">Iniciar partida</a>
+    <button class="btn-secundario">Configurações</button>
+
+    <div class ="cupom-gamer">
+        <h3>Cupom: DEV100</h3>
+        <p>Desconto liberado na loja!</p>
+    </div>
+    
+</body>
+</html>
